@@ -1,14 +1,12 @@
-import { EventEmitter } from 'node:events'
+import { EventEmitter } from 'node:events';
 
 export let counter = 0;
 
 export const increment = () => {
-    counter++
-    console.log('counter: ' + counter);
-}
+  counter++;
+  console.log('counter: ' + counter);
+};
 
-class E extends EventEmitter {
-}
+class E extends EventEmitter {}
 
 export const events = new E();
-
